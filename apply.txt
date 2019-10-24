@@ -1,0 +1,11 @@
+
+var person = {
+ fullName: function(city, country) {
+ return this.firstName + " " + this.lastName + "," + city + "," + country;
+ }
+}
+var person1 = {
+ firstName:"Rema",
+ lastName: "Ahmad"
+}
+person.fullName.apply(person1, ["Majed", "Al-Fahad"]);
